@@ -1,11 +1,6 @@
 name: Build and Push Docker image to GHCR
 
-on:
-  push:
-    branches: [ main ]  # ← build su push a main (o cambia con il tuo default branch)
-    tags: [ 'v*' ]      # ← build su tag tipo v1.2.3 per semver
-  pull_request:         # ← build (senza push) anche su PR per testare
-    branches: [ main ]
+
 
 env:
   REGISTRY: ghcr.io
